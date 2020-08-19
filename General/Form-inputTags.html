@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Form</title>
+      <link href="CommonStyles.css" rel="stylesheet">
+   </head>
+	
+   <body>
+      <form >
+         Name: <input type = "text" name = "first_name" />
+         <br><br>
+         Password: <input type = "text" name = "password" />
+         <br><br>
+         Describe yourSelf :
+         <textarea rows = "3" cols = "50" name = "description">
+            Enter description here...
+         </textarea>
+         <br><br>
+         Hobbies: 
+         <input type = "checkbox" name = "Playing" value = "on"> Playing
+         <input type = "checkbox" name = "Sleeping" value = "on" checked> Sleeping- selected by default
+         <input type = "checkbox" name = "singing" value = "on"> singing
+         <input type = "checkbox" name = "Dancing" value = "on"> Dancing
+         <br><br>
+         select one hobby you like most: 
+         <input type = "radio" name = "Hobbies" value = "Playing" > Playing
+         <input type = "radio" name = "Hobbies" value = "Sleeping"> Sleeping
+         <input type = "radio" name = "Hobbies" value = "singing" checked> singing - selected by default
+         <input type = "radio" name = "Hobbies" value = "Dancing"> Dancing
+         <br><br>
+         Select a subject you like most
+         <select name = "dropdown">
+               <option value = "" ></option>
+                <option value = "Maths" >Maths</option>
+                <option value = "Physics" >Physics</option>
+                <option value = "English" selected >English - selected by default</option>
+                <option value = "French" >French</option>
+          </select>
+          <br><br>
+          <input type = "submit" name = "submit" value = "Submit" />
+          <input type = "reset" name = "reset"  value = "Reset" />
+      </form>
+   </body>
+	
+</html>
