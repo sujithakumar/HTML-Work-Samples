@@ -1,0 +1,25 @@
+@import url('../Stylesheets/CommonStyles.css');
+
+div{
+    border: 2px solid orange !important;
+ }
+
+ span{
+    border: 3px solid green;
+ }
+
+ #beets{
+    border: 2px solid turquoise;
+ }
+
+ .pickMe{
+    border: 2px solid yellow;
+ }
+
+ *{
+    color:pink;
+ }
+
+ div{
+    border: 5px solid saddlebrown;
+ }
