@@ -3,42 +3,42 @@
 <html>
 
    <head>
-      <title>Basic Selectors</title>
-      <link rel="stylesheet"  href="../Assets/Stylesheets/SelectorStyles.css">
+      <title>Selectors</title>
+      <link rel="stylesheet"  href="../Assets/Stylesheets/basicSelectors.css">
    </head>
 	
    <body>
-    <div >sample Div1</div>
-    <br>
-    <br>
+
     <div class ="div-borders">
-       <h5>universal selector * applies pink color</h5>
-       <br>
-       <h5>id slector selects items with id and applies border</h5>
-       <br>
-       <h5>class slector selects items with class and applies border</h5>
-       <br>
-       <h5>element slector selects elements and applies border</h5>
-        <br>
-    </div>
-        <ul >
-            <li id="beets">Beetroot</li>
-            <li id="ginger">Ginger</li>
-            <li class="pickMe">Potato</li>
-            <li>Radish</li>
-         </ul>
-
-         <br><br>
-
-         <ol type = "a" >
-               <li>Beetroot</li>
-               <li class="pickMe">Ginger</li>
-               <li class="pickMe">Potato</li>
-               <li>Radish</li>
-         </ol>
-
-
-
+      <details>
+         <summary>Universal Selector : *</summary>
+            <p>Applies styles on every element in the document</p>
+            <p>example : font style of this document</p>
+       </details>
+     </div>
    </body>
-	
+	<div class ="div-borders">
+      <details>
+         <summary id="idSelector">Element Selector : tag name</summary>
+         <p>Applies styles on elements in the document</p>
+         <p>example : paragraph styles- info inside every details tag are made of P tag</p>
+       </details>
+     </div>
+   </body>
+   <div class ="div-borders">
+      <details>
+         <summary>id Selector : #</summary>
+            <p>Applies styles on element with id="idSelector" in the document</p>
+            <p>id is set in 2 & 4th summary tag </p>
+       </details>
+     </div>
+   </body>
+   <div class ="div-borders">
+      <details>
+         <summary id="idSelector">class Selector : .</summary>
+            <p>Applies styles on every element with  class ="div-borders" in the document</p>
+            <p>note: styles are inherited from external css imported here</p>
+       </details>
+     </div>
+   </body>
 </html>
