@@ -10,7 +10,7 @@ body {
 
 body {
     /* the content will be centered on devices wider than 500px */
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
 }
