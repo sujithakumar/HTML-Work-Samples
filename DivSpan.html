@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS examples</title>
+    <link href="Assets/Stylesheets/commonStyles.css" rel="stylesheet">
+    <style>
+        div {
+            text-align: center;
+            margin: 4px;
+            width: 400px;
+            border: 2px solid pink;
+        }
+
+        span {
+            padding: 5px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div-borders">
+        <h4>span inside div - overlaps</h4>
+        <span>span content 1</span>
+        <span>span content 2</span>
+        <span>span content 3</span>
+        <span>span content 4</span>
+        <span>span content 5</span>
+        <span>span content 6</span>
+    </div>
+
+    <div class="div-borders">
+        <h4>div inside div - works fine</h4>
+        <div>div content 1</div>
+        <div>div content 2</div>
+        <div>div content 3</div>
+        <div>div content 4</div>
+        <div>div content 5</div>
+        <div>div content 6</div>
+    </div>
+
+    <span>
+        <h4>div inside span- breaks - bad practise</h4>
+        <div>div 1</div>
+        <div>div 2</div>
+    </span>
+
+</body>
+
+</html
