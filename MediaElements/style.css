@@ -1,0 +1,18 @@
+@import url('../Assets/Stylesheets/commonStyles.css');
+
+mark{
+    background-color: sandybrown;
+}
+
+video{
+    align-items: center;
+}
+
+figure{
+    border:3px solid red;
+}
+
+figcaption{
+    font-weight: bold;
+    font-size: larger;
+}
