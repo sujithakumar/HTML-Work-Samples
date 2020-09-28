@@ -1,0 +1,16 @@
+@import url(commonStyles.css);
+
+
+img{
+    height: 100px;
+    width:100px;
+}
+
+img:hover{
+    opacity: 0.5;
+
+}
+
+img[data-filetype="image"] { 
+    border:2px solid pink;
+ }
