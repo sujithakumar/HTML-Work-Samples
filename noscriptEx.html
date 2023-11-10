@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NO Script</title>
+    <link href="Assets/Stylesheets/commonStyles.css" rel="stylesheet">
+    <style>
+        pre{
+            border:1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+<p>
+    <pre>The <strong>Noscript</strong> tag is used to define an 
+    alternate content to be displayed to users that have 
+    <strong>disabled scripts in their browser or have a browser that doesn't support script.</strong>
+    
+    The <strong>Noscript</strong> element can be used in both HEAD and BODY.
+    
+    When used inside HEAD, the <strong>Noscript</strong> 
+    element could only contain LINK,STYLE and META elements.
+    </pre>
+</p>
+
+<P>
+    <p>I have a script & noscript defined inside body</p>
+    <p>The code goes as follows</p>
+    <code>
+       <pre>
+        &ltscript&gt
+            document.write("write this script if JS is enabled");
+            <strong>Since my JS is enabled , this will be printed</strong>
+        &lt/script&gt
+        &ltnoscript&gt
+            document.write("write this script if JS is Disabled");
+        &lt/noscript&gt
+       </pre>
+    </code>   
+</P>
+<script>
+    document.write("write this script if JS is enabled");
+</script>
+
+<noscript>
+    document.write("write this script if JS is Disabled");
+</noscript>
+
+</body>
+
+</html>
