@@ -6,11 +6,16 @@
     <title>Tab index</title>
     <link href="Assets/Stylesheets/commonStyles.css" rel="stylesheet">
     <style>
-        a {
-            padding: 3px;
+        p {
+            margin: 5px;
         }
-        h4{
-            text-decoration: none!important;
+
+        a {
+            padding: 5px 20px;
+        }
+
+        h4 {
+            text-decoration: none !important;
         }
     </style>
 </head>
@@ -20,21 +25,66 @@
 
 
     <div class="div-borders">
-        <h4>
-        <pre>
-            The tabindex attribute specifies the tab order of an element 
-            (when the "tab" button is used for navigating).
-            Low to high -> priority
-        </pre>
-        </h4>
-        <a href="www.google.com" target="_blank" tabindex="2">Google</a>
-        <a href="www.yahoo.com" target="_blank" tabindex="1">Yahoo</a>
-        <a href="www.amazon.com" target="_blank" tabindex="1">Amazon</a>
-        <a href="www.hotstar.com" target="_blank" tabindex="3">hotstar</a>
+
+        <ul>
+            <li>
+                The tabindex attribute specifies the tab order of an element
+                (when the "tab" button is used for navigating).
+            </li>
+            <li>
+               Duplicate tabindex will be visited in order of its occurrence
+            </li>
+            <li>
+                tabindex=0 or no tabindex mentioned will be visited last, in the order of its occurrence
+            </li>
+            <li>
+                No tab index element will be visited before element with tabindex 0
+            </li>
+        </ul>
+
+        <p>
+            <em>TABINDEX</em> &nbsp; &NonBreakingSpace;<strong>NULL/NO TABINDEX</strong>
+            <a href="www.walmart.com" target="_blank">walmart</a>
+        </p>
+        <p>
+            <em>TABINDEX</em> &nbsp; &NonBreakingSpace;<strong>2</strong>
+            <a href="www.google.com" target="_blank" tabindex="2">Google</a>
+        </p>
+
+        <p>
+            <em>TABINDEX</em> &nbsp; &NonBreakingSpace;<strong>1</strong>
+            <a href="www.yahoo.com" target="_blank" tabindex="1">Yahoo</a>
+        </p>
+
+        <p>
+            <em>TABINDEX</em> &nbsp; &NonBreakingSpace;<strong>1</strong>
+            <a href="www.amazon.com" target="_blank" tabindex="1">Amazon</a>
+        </p>
+
+        <p>
+            <em>TABINDEX</em> &nbsp; &NonBreakingSpace;<strong>3</strong>
+            <a href="www.hotstar.com" target="_blank" tabindex="3">hotstar</a>
+        </p>
+
+        <p>
+            <em>TABINDEX</em> &nbsp; &NonBreakingSpace;<strong>0</strong>
+            <a href="www.netflix.in" target="_blank" tabindex="0">Netflix</a>
+        </p>
 
         <h4>
-            tabindex=0 or no tabindex mentioned will be visited last, in the order of its occurrence
+            
         </h4>
+
+        <strong>Order</strong>
+        <ol>
+            <li>Yahoo</li>
+            <li>Amazon</li>
+            <li>Google</li>
+            <li>Hotstar</li>
+            <li>walmart</li>
+            <li>Netflix</li>
+        </ol>
+
     </div>
 
 </body>

@@ -7,7 +7,7 @@
    </head>
 	
    <body >
-      <form action="">
+      <form action=""> 
          Name: <input type = "text" name = "name" />
          <br><br>
 
@@ -17,7 +17,7 @@
          Date of Birth : <input type ="date" name= "dob"/>
          <br><br>
 
-         Phone number : <input type ="number" name= "num"/>
+         Phone number : <input type ="tel" name= "tel"/>
          <br><br>
 
          Email : <input type ="email" name= "mail"/>
@@ -58,11 +58,12 @@
          <br><br>
 
          Attach a supporting Document:
-         <input type="file">
+         <input type="file"  multiple>
 
          <br><br>
           <label contenteditable="true"> editable label</label>
-          <input type = "submit" name = "submit" value = "Submit" />
+          <input type = "submit" name = "submit" value = "Submit"/>
+          <input type = "submit" name = "submit" value = "Submit without validation" formnovalidate/>
           <input type = "reset" name = "reset"  value = "Reset" />
       </form>
    </body>
